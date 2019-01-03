@@ -67,7 +67,7 @@ angularjs paging, angularjs 分页插件
 
 
 
-![1545123657495](./img/img3.png)![1545123738386](C:/work/word/%E5%89%8D%E7%AB%AF%E6%96%87%E6%A1%A3/%E7%9C%81%E5%85%AC%E5%8F%B8%E5%89%8D%E7%AB%AF%E6%96%87%E6%A1%A3/img/img4.png)
+![1545123657495](./img/img3.png)![1545123738386](./img/img4.png)
 
 在function 里面执行获取下一页列表的方法, 参数对应的是 条数跟页数,要将获取到的 总条数赋值给 ***allCount***
 
