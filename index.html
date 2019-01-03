@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+</head>
+<body ng-app="myPaging" ng-controller="paging">
+    <paging all-count="allCount" sel-page="paging" page-size="pageSize" change-page="changePage(selPage)" change-size="changeSize(pageSize)" select-list="selectList" input-page="inputPage"></paging>
+    <script src="./angular.min.js"></script>
+    <script src="./app.js"></script>
+    <script>
+        app.controller('paging', ["$scope", "$http", function ($scope, $http) {
+            // 总条数
+            $scope.allCount = 100;
+            // 当前页
+            $scope.paging = 10;
+            // 一页显示多少条数据
+            $scope.pageSize = "10";
+            // 是否需要下拉选择显示数
+            $scope.selectList = [10, 20, 30, 40];
+            // 是否需要直接跳转页
+            $scope.inputPage = true;
+            $scope.changePage = function(selPage){
+                console.log("页数=" + selPage)
+                console.log("条数=" + $scope.pageSize)
+            }
+        }])
+    </script>
+</body>
+</html>
