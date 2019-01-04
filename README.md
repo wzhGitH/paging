@@ -75,7 +75,7 @@ angularjs paging, angularjs 分页插件
 
  **点击搜索时 记得初始化 页数**
 
-使用例子可查看   `CompanyNews/NewsList.cshtml`
+
 
 - 前端分页
 
@@ -90,8 +90,6 @@ angularjs paging, angularjs 分页插件
 ​	allCount                等于 itemList.length
 
 ​	其余的不变
-
-使用例子可查看   `Budgeting/Budget.cshtml`
 
 - 界面展示效果
 
